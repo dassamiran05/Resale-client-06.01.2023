@@ -1,0 +1,126 @@
+/* .carousel-item{
+    height: 80vh;
+} */
+.carousel-item img{
+    border-radius: 20px;
+}
+.catagory_area{
+    padding: 50px 0;
+}
+.catagory_area h2{
+    margin-bottom: 30px;
+}
+.card_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_box{
+    height: 100% !important;
+}
+
+
+/* ======================================================= samilar product */
+/*********************** Demo - 7 *******************/
+.samiler_area{
+    padding: 50px 0;
+}
+.samiler_area h2{
+    margin-bottom: 30px;
+}
+.box7{
+    position:relative;
+    overflow: hidden;
+}
+ .box7::after,.box7::before{
+    content: '';
+    width:100%;
+    height:100%;
+    background:rgba(11,33,47,.9);
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    transition:all .5s ease 0s;
+}
+ .box7::after{
+    background:rgba(255,255,255,.3);
+    /* border:2px solid #0dab76; */
+    top:0;
+    left:170%;
+    opacity:0;
+    z-index:1;
+    transform:skewX(45deg);
+    transition:all 1s ease 0s;
+}
+ .box7:hover::before{
+    opacity:1;
+}
+ .box7:hover::after{
+    left:-170%;
+    opacity:1;
+}
+ .box7 img{
+    width:100%;
+    height:300px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+ .box7 .box-content{
+    width:100%;
+    position:absolute;
+    bottom:-100%;
+    left:0;
+    transition:all .5s ease 0s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .box7:hover .box-content{
+    bottom:50%;
+}
+ .box7 .title{
+    display:block;
+    font-size:22px;
+    font-weight:700;
+    color:#fff;
+    margin:0 0 0;
+}
+ .box7 .post{
+    display:block;
+    font-size:15px;
+    font-weight:600;
+    color:#fff;
+    margin-bottom:10px;
+}
+ /* .box7 .icon{
+    margin:0;
+}
+ .box7 .icon li{
+    display:inline-block;
+}
+ .box7 .icon li a{
+    display:block;
+    width:35px;
+    height:35px;
+    line-height:35px;
+    border-radius:50%;
+    background:#0dab76;
+    font-size:18px;
+    color:#fff;
+    margin-right:10px;
+    transition:all .5s ease 0s;
+}
+ .box8 .icon li,.box8 .title{
+    display:inline-block;
+}
+ .box7 .icon li a:hover{
+    transform:rotate(360deg)
+} */
+ @media only screen and (max-width:990px){
+    .box{
+        margin-bottom:30px;
+    }
+    
+}
